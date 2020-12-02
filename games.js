@@ -2,6 +2,13 @@ var randomNumber, randonChosenNumber;
 
 var buttonColors = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
+var userClickedPattern = [];
+
+$(".btn").click((event)=>
+{
+    userClickedPattern.push(event.target.id);
+    c//onsole.log(userClickedPattern);
+});
 
 function nextSequence() {
   randomNumber = Math.floor(4 * Math.random());
