@@ -7,7 +7,7 @@ var userClickedPattern = [];
 $(".btn").click((event)=>
 {
     userClickedPattern.push(event.target.id);
-    c//onsole.log(userClickedPattern);
+    //console.log(userClickedPattern);
 });
 
 function nextSequence() {
