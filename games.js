@@ -60,6 +60,11 @@ function checkSequence(idx)
   }
   else
   {
-    $("#level-title").html("Game Over");
+    $("#level-title").html("Game Over, Press Any Key to Restart");
+    $("body").addClass("game-over");
+    playSound("wrong");
+    setTimeout(() => {
+      $("body").removeClass("game-over");
+    }, 200);
   }
 }
