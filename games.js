@@ -1,9 +1,19 @@
 
 var randomNumber, randomChosenColor, currentColor;
-
+var keypressed = false;
 var buttonColors = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userClickedPattern = [];
+var level=1;
+
+$(document).keypress(function() {
+  if(keypressed == false)
+  {
+    $("#level-title").html("Level "+level);
+    nextSequence();
+    keypressed = true;
+  }
+});
 
 $(".btn").click((event)=> {
     userClickedPattern.push(event.target.id);
