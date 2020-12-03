@@ -9,6 +9,7 @@ var level=0;
 $(document).keypress(function() {
   if(keypressed == false)
   {
+    $("#level-title").html("Level "+level);
     nextSequence();
     keypressed = true;
   }
