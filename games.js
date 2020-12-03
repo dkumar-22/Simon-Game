@@ -66,5 +66,13 @@ function checkSequence(idx)
     setTimeout(() => {
       $("body").removeClass("game-over");
     }, 200);
+    startover();
   }
+}
+
+function startover()
+{
+  level=0;
+  gamePattern=[];
+  keypressed = false;
 }
